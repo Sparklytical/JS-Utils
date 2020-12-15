@@ -9,6 +9,7 @@
   - [1.2. Email Validator](#12-email-validator)
 - [2. React Utils](#2-react-utils)
   - [2.1. Apollo Client HOC to enable support for SSR and SSG in Next.Js based apps.](#21-apollo-client-hoc-to-enable-support-for-ssr-and-ssg-in-nextjs-based-apps)
+  - [2.2. Firebase Auth Context with easy custom Hook](#22-firebase-auth-context-with-easy-custom-hook)
 
 # 1. General Utils
 
@@ -44,4 +45,20 @@ validateEmail(options.usernameOrEmail) ? {'Its an email'}: {'not an email'}
 
 ```ts
 export default withApollo({ ssr: false })(Index)
+```
+
+## 2.2. [Firebase Auth Context with easy custom Hook]('../../React/firebaseAuth.ts')
+
+> Can be customized as necessary to enable custom providers.
+> Provides a easy hook that can be accessed to use functions.
+> Provides a global Context
+```ts
+<ProvideAuth>
+    <App />
+</ProvideAuth>
+```
+
+```ts
+const auth = useAuth();
+<button onClick={()=>auth.signout()}>Sign Out</button>
 ```
