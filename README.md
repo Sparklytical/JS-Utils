@@ -1,12 +1,14 @@
-# Js Utils. 
+# Js Utils.
 ## Some common Utils.
 
 
-- [1. JS-Utils](#1-js-utils)
-  - [1.1. General Utils](#11-general-utils)
-    - [1.1.1. Format To Dollar](#111-format-to-dollar)
-  - [1.2. React Utils](#12-react-utils)
-    - [1.2.1. Apollo Client HOC to enable support for SSR and SSG in Next.Js based apps.](#121-apollo-client-hoc-to-enable-support-for-ssr-and-ssg-in-nextjs-based-apps)
+- [Js Utils.](#js-utils)
+  - [Some common Utils.](#some-common-utils)
+- [1. General Utils](#1-general-utils)
+  - [1.1. Format To Dollar](#11-format-to-dollar)
+  - [1.2. Email Validator](#12-email-validator)
+- [2. React Utils](#2-react-utils)
+  - [2.1. Apollo Client HOC to enable support for SSR and SSG in Next.Js based apps.](#21-apollo-client-hoc-to-enable-support-for-ssr-and-ssg-in-nextjs-based-apps)
 
 # 1. General Utils
 
@@ -24,6 +26,13 @@ formatToDollar(1523.65) // "$1,523.65"
 formatToDollar(1893042.3498) // "$1,893,042.35"
 ```
 
+## 1.2. [Email Validator]('./../General/emailValidator.ts')
+
+> Email Address Regular Expression That 99.99% Works. From [here](https://emailregex.com/)
+
+```ts
+validateEmail(options.usernameOrEmail) ? {'Its an email'}: {'not an email'}
+```
 
 
 # 2. React Utils
