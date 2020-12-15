@@ -1,0 +1,52 @@
+{
+  "author": "Sparklytical",
+  "bugs": {
+    "url": "https://github.com/Sparklytical/JS-Utils/issues"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "description": "Collection of commonly used utils to be used in JS based projects",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "eslint": "^7.15.0",
+    "eslint-config-galex": "^2.9.4",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "standard-version": "^9.0.0"
+  },
+  "homepage": "https://github.com/Sparklytical/JS-Utils#readme",
+  "hooks": {
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+    "pre-commit": "lint-staged"
+  },
+  "keywords": [
+    "javascript",
+    "javascript",
+    "nodeJS",
+    "react",
+    "utils",
+    "utils",
+    "utils"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,tsx,ts,tsx,css,scss}": [
+      "eslint --fix"
+    ],
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write"
+  },
+  "main": "index.js",
+  "name": "js-utils",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sparklytical/JS-Utils.git"
+  },
+  "scripts": {
+    "release": "standard-version"
+  },
+  "version": "0.0.1"
+}
