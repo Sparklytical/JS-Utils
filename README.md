@@ -13,7 +13,7 @@
 
 # 1. General Utils
 
-## 1.1. [Format To Dollar]('./../General/formatToDollar.ts')
+## 1.1. [Format To Dollar]('./../General/formatToDollar.ts)
 
 > Using Intl.NumberFormat API to format numbers as dollars $ in Javascript. [More Info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Parameters)
 
@@ -27,7 +27,7 @@ formatToDollar(1523.65) // "$1,523.65"
 formatToDollar(1893042.3498) // "$1,893,042.35"
 ```
 
-## 1.2. [Email Validator]('./../General/emailValidator.ts')
+## 1.2. [Email Validator]('./../General/emailValidator.ts)
 
 > Email Address Regular Expression That 99.99% Works. From [here](https://emailregex.com/)
 
@@ -38,7 +38,7 @@ validateEmail(options.usernameOrEmail) ? {'Its an email'}: {'not an email'}
 
 # 2. React Utils
 
-## 2.1. [Apollo Client HOC to enable support for SSR and SSG in Next.Js based apps]('../../React/withApollo.ts').
+## 2.1. [Apollo Client HOC to enable support for SSR and SSG in Next.Js based apps]('../../React/withApollo.ts).
 
 > Can be used to enable/disable SSR when needed. Adds NextPageContext support.
 > Needs [next-apollo](https://github.com/adamsoffer/next-apollo/) and [@apollo/client](https://github.com/apollographql/apollo-client/)
@@ -47,7 +47,7 @@ validateEmail(options.usernameOrEmail) ? {'Its an email'}: {'not an email'}
 export default withApollo({ ssr: false })(Index)
 ```
 
-## 2.2. [Firebase Auth Context with easy custom Hook]('../../React/firebaseAuth.ts')
+## 2.2. [Firebase Auth Context with easy custom Hook]('../../React/firebaseAuth.ts)
 
 > Can be customized as necessary to enable custom providers.
 > Provides a easy hook that can be accessed to use functions.
