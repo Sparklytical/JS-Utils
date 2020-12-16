@@ -53,9 +53,9 @@ export default withApollo({ ssr: false })(Index)
 > Provides a easy hook that can be accessed to use functions.
 > Provides a global Context
 ```ts
-<ProvideAuth>
+<AuthProvider>
     <App />
-</ProvideAuth>
+</AuthProvider>
 ```
 
 ```ts

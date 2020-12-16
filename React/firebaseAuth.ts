@@ -16,13 +16,13 @@ const authContext = createContext();
 
 /**
  * This function will create a context that you need to wrap your main component with.
- * <ProvideAuth>
+ * <AuthProvider>
         <App />
-    </ProvideAuth>
+    </AuthProvider>
 */
 
-export function ProvideAuth({children}) {
-    const auth = useProvideAuth();
+export function AuthProvider({children}) {
+    const auth = useAuthProvider();
     return <authContext.Provider value={auth}>{children}</authContext.Provider>;
 }
 
@@ -38,7 +38,7 @@ export const useAuth = () => {
     return useContext(authContext);
 };
 
-function useProvideAuth(): {
+function useAuthProvider(): {
   user: any;
   signin: (email: string, password: string) => any;
   signup: (email: string, password: string) => any;
